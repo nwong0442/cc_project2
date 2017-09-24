@@ -9,8 +9,26 @@
  type="mturk.js">
 </script>
 <body>
-<h1>
- How many recognizable people are in each image?
-</h1>
+    <form id="mturk_form">
+        <h1>
+         How many recognizable people are in the image?
+        </h1>
+        <img src="pictures\people1.jpg" height="420">
+        <br />
+        <label>
+        <input name="number" type="number" min=0>
+        <input type="submit">
+        <br />
+
+        <h2>
+         How many recognizable people are in the image?
+        </h2>
+        <img src="pictures\people2.jpg" height="420">
+        <br />
+        <label>
+        <input name="number" type="number" min=0>
+        <input type="submit">
+        <br />
+    </form>
 </body>
 </html>
