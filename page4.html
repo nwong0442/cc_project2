@@ -5,19 +5,23 @@
         MTurk request
     </title>
 </head>
+
 <script 
- type="tools\mturk.js">
+ type="mturk" src="/tools/mturk.js">
 </script>
+<script 
+ type="text/javascript" src="/tools/inputChecker.js">
+</script>
+
 <body>
     <form id="mturk_form">
         <h1>
          How many recognizable people are in the image?
         </h1>
-        <img src="pictures\people3.jpg" height="420">
+        <img src="pictures\people4.jpg" height="420">
         <br />
         <label>
-        <input name="number" type="number" min=0>
-        <input type="submit">
+        <input name="number" type="number" min=0 id="userInput">
         <br />
     </form>
 <style>
@@ -40,9 +44,9 @@ a.next {
 
 </style>
 
-<a href="project2_page2.html" class="previous">&#8249;</a>
-3
-<a href="project2_page4.html" class="next">&#8250;</a>
+<a href="page3.html" class="previous" id="previous">&#8249;</a>
+4
+<a href="page5.html" class="next" id="next">&#8250;</a>
 
 </body>
 </html>
