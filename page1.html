@@ -22,7 +22,7 @@
 </script>
 
 <body>
-    <form id="mturk_form">
+    <form id="mturk_form" onkeypress="return event.keyCode != 13">
         <h1>
         How many recognizable people are in the image?
         </h1>
@@ -53,7 +53,7 @@ a.next {
 </style>
 
 1/7
-<a href="page2.html" class="next" id="next" onclick="return empty();document.getElementById('userInput1').submit()">&#8250;</a>
+<a href="#" class="next" id="next" onclick="return empty();document.getElementById('userInput1').submit()">&#8250;</a>
 
 </body>
 </html>
