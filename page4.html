@@ -6,11 +6,19 @@
     </title>
 </head>
 
-<script 
- type="mturk" src="/tools/mturk.js">
+<script src="tools/mturk.js">
 </script>
-<script 
- type="text/javascript" src="/tools/inputChecker.js">
+<script>
+    function empty() {
+        var x;
+        x = document.getElementById("userInput1").value;
+        if (x == "") {
+            alert("Please enter a number");
+            return false;
+        } else {
+            return true;
+        };
+    }
 </script>
 
 <body>
@@ -18,10 +26,15 @@
         <h1>
          How many recognizable people are in the image?
         </h1>
-        <img src="pictures\people4.jpg" height="420">
+        <img src="pictures\people4.jpg" width="800">
         <br />
-        <label>
-        <input name="number" type="number" min=0 id="userInput">
+        Please input a number:
+        <input name="number4" type="number" min=0 id="userInput4">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text4" id="explanation4" style="width: 500px; height: 100px; vertical-align: top"></textarea>
         <br />
     </form>
 <style>
@@ -32,11 +45,6 @@ a {
     padding: 4px 8px;
 }
 
-a.previous{
-    background-color: #f1f1f1;
-    color: black;
-}
-
 a.next {
     background-color: #f1f1f1;
     color: black;
@@ -44,9 +52,8 @@ a.next {
 
 </style>
 
-<a href="page3.html" class="previous" id="previous">&#8249;</a>
-4
-<a href="page5.html" class="next" id="next">&#8250;</a>
+4/7
+<a href="page5.html" class="next" id="next" onclick="return empty();document.getElementById('userInput4').submit()">&#8250;</a>
 
 </body>
 </html>
