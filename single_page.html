@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        MTurk request
+    </title>
+</head>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="tools/mturk.js">
+</script>
+<script>
+    function() {
+        $('form > input').keyup(function() {
+
+            var empty = false;
+            $('form > input').each(function() {
+                if ($(this).val() == '') {
+                    empty = true;
+                }
+            });
+
+            if (empty) {
+                $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            } else {
+                $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            }
+        });
+    }
+</script>
+
+<body>
+    <form id="mturk_form" onkeypress="return event.keyCode != 13">
+        <h1>
+        How many recognizable people are in the image?
+        </h1>
+        <img src="pictures\people1.jpg" width="800">
+        <br />
+        Please input a number:
+        <input name="number1" type="number" min=0 id="userInput1">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text1" id="explanation1" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <img src="pictures\people2.jpg" width="800">
+        <br />
+        Please input a number:
+        <input name="number2" type="number" min=0 id="userInput2">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text2" id="explanation2" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <img src="pictures\people3.jpg" width="800">
+        <br />
+        Please input a number:
+        <input name="number3" type="number" min=0 id="userInput3">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text3" id="explanation3" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <img src="pictures\people4.jpg" width="800">
+        <br />
+        Please input a number:
+        <input name="number4" type="number" min=0 id="userInput4">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text4" id="explanation4" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <img src="pictures\people5.png" width="800">
+        <br />
+        Please input a number:
+        <input name="number5" type="number" min=0 id="userInput5">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text5" id="explanation5" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <img src="pictures\people6.jpg" width="800">
+        <br />
+        Please input a number:
+        <input name="number6" type="number" min=0 id="userInput6">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text6" id="explanation6" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+
+        <br />
+        Please input a number:
+        <input name="number7" type="number" min=0 id="userInput7">
+        <br />
+        <br />
+        If you estimated the number in any way, please explain how:
+        <br />
+        <textarea class="userInput" name="text7" id="explanation7" style="width: 500px; height: 100px; vertical-align: top"></textarea>
+        <br />
+    </form>
+
+<input type="submit" id="register" value="Register" disabled="disabled" />
+
+</body>
+</html>
