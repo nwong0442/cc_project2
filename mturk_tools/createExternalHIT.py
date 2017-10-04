@@ -11,7 +11,7 @@ NUMBER_OF_HITS = 10  # Number of different HITs posted for this task
 NUMBER_OF_ASSIGNMENTS = 1  # Number of tasks that DIFFERENT workers will be able to take for each HIT
 LIFETIME = 60 * 60   # How long that the task will stay visible if not taken by a worker (in seconds)
 REWARD = 0.50  # Base payment value for completing the task (in dollars)
-DURATION = 60*60  # How long the worker will be able to work on a single task (in seconds)
+DURATION = 60*60*24 # How long the worker will be able to work on a single task (in seconds)
 APPROVAL_DELAY = 60*60*2  # How long after the task is completed will the worker be automatically paid if not manually approved (in seconds)
 
 
@@ -24,9 +24,9 @@ KEYWORDS = ['Facial recognition']
 
 
 # Your Amazon Web Services Access Key (private)
-AWS_ACCESS_KEY = 'AKIAI7QVOVIMLZZDEPQQ' # <-- TODO: Enter your access key here
+AWS_ACCESS_KEY = 'AKIAJFBXUJSEKWAJNB3A' # <-- TODO: Enter your access key here
 # Your Amazon Web Services Secret Key (private)
-AWS_SECRET_KEY = 'UDSbVFgUJMbUzEOCWI1/GPnC4fVIixF2t1VZz/ua' # <-- TODO: Enter your private key here
+AWS_SECRET_KEY = 'qSTvE71u/PiPKwN5VH6h8T/MaOO6nFsotnHwmWUR' # <-- TODO: Enter your private key here
 
 #######################################
 
