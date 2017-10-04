@@ -10,7 +10,7 @@
  **/
 
 // selector used by jquery to identify your form
-var form_selector = "#mturk_form";
+var form_selector = "mturk_form";
 
 // function for getting URL parameters
 function gup(name) {
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     // If the HIT hasn't been accepted yet, disabled the form fields.
     if(aid == "ASSIGNMENT_ID_NOT_AVAILABLE") {
-	    $('input,textarea,select').attr("DISABLED", "disabled");
+      $('input,textarea,select').attr("DISABLED", "disabled");
     }
 
     // Add a new hidden input element with name="assignmentId" that
